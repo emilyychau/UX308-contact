@@ -8,6 +8,7 @@ export function SubscriberForm() {
         const formObject = Object.fromEntries(formData.entries());
         console.log(formObject);
     }}>
+
       <Form.Field>
         <Form.Label>Username</Form.Label>
         <Form.Control>
@@ -49,8 +50,10 @@ export function SubscriberForm() {
             <Form.Select
               name="subject"
             >
-              <option value="select-dropdown">Select dropdown</option>
-              <option value="with-options">With options</option>
+              <option value="complaints">Complaints or Concerns</option>
+              <option value="large-order">Large order</option>
+              <option value="catering">Catering</option>
+              <option value="other-comments">Other Comments</option>
             </Form.Select>
           </Form.Control>
           <Form.Control fullwidth loading>
