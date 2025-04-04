@@ -63,12 +63,6 @@ export function SubscriberForm() {
         </Form.Field>
       </Form.Field>
       
-      <Form.Field>
-        <Form.Control>
-          <Textarea placeholder="Type your message here"/>
-        </Form.Control>
-      </Form.Field>
-
       <Form.Field kind="group">
         <Form.Control>
           <Button color="link">Submit</Button>
