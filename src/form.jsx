@@ -30,7 +30,6 @@ export function SubscriberForm() {
         <Form.Label>Email</Form.Label>
         <Form.Control>
           <Form.Input
-            color="danger"
             name="email"
           />
           <Icon align="left" size="small">
@@ -40,7 +39,7 @@ export function SubscriberForm() {
             <i className="fas fa-exclamation-triangle" />
           </Icon>
         </Form.Control>
-        <Form.Help color="danger">This email is invalid</Form.Help>
+        <Form.Help color="danger">An email is required</Form.Help>
       </Form.Field>
 
       <Form.Field>
@@ -50,16 +49,24 @@ export function SubscriberForm() {
             <Form.Select
               name="subject"
             >
+              <option value="menu-questions">Menu Questions</option>
               <option value="complaints">Complaints or Concerns</option>
+              <option value="positive-feedback">Positive Feedback</option>
               <option value="large-order">Large order</option>
               <option value="catering">Catering</option>
               <option value="other-comments">Other Comments</option>
             </Form.Select>
           </Form.Control>
           <Form.Control fullwidth loading>
-            <Form.Input placeholder="With loading state" />
+            <Form.Input placeholder="Message Subject Line"/>
           </Form.Control>
         </Form.Field>
+      </Form.Field>
+      
+      <Form.Field>
+        <Form.Control>
+          <Textarea placeholder="Type your message here"/>
+        </Form.Control>
       </Form.Field>
 
       <Form.Field kind="group">
