@@ -65,7 +65,7 @@ export function SubscriberForm() {
       
       <Form.Field>
         <Form.Control>
-          <Form.Input placeholder="Type your message here"/>
+          <Textarea placeholder="Type your message here"/>
         </Form.Control>
       </Form.Field>
 
