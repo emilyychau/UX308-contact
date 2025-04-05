@@ -49,7 +49,6 @@ export function SubscriberForm() {
             <Form.Select
               name="subject"
             >
-              <option placeholder="Message Subject">Message Subject</option>
               <option value="menu-questions">Menu Questions</option>
               <option value="complaints">Complaints or Concerns</option>
               <option value="positive-feedback">Positive Feedback</option>
@@ -66,7 +65,7 @@ export function SubscriberForm() {
       
       <Form.Field>
         <Form.Control>
-          <Textarea placeholder="Type your message here"/>
+          <Form.Input placeholder="Type your message here"/>
         </Form.Control>
       </Form.Field>
 
