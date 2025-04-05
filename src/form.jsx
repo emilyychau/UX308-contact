@@ -15,6 +15,7 @@ export function SubscriberForm() {
           <Form.Input
             color="success"
             name="name"
+            placeholder="First Name      Last Name"
           />
         </Form.Control>
       </Form.Field>
@@ -24,6 +25,7 @@ export function SubscriberForm() {
         <Form.Control>
           <Form.Input
             name="email"
+            placeholder="example@mail.com"
           />
           <Icon align="left" size="small">
             <i className="fas fa-envelope" />
@@ -32,7 +34,6 @@ export function SubscriberForm() {
             <i className="fas fa-exclamation-triangle" />
           </Icon>
         </Form.Control>
-        <Form.Textarea placeholder="example@mail.com"/>
         <Form.Help color="danger">A valid email address is required</Form.Help>
       </Form.Field>
 
