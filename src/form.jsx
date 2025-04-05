@@ -1,4 +1,4 @@
-import 'bulma/css/bulma.min.css';
+import styles from 'bulma/css/bulma.min.css?inline';
 import { Form, Icon, Button } from 'react-bulma-components';
 
 export function SubscriberForm() {
@@ -78,6 +78,8 @@ export function SubscriberForm() {
           </Button>
         </Form.Control>
       </Form.Field>
+
+      <style>{styles}</style>
 
     </form>
 }
