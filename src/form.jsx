@@ -10,20 +10,13 @@ export function SubscriberForm() {
     }}>
 
       <Form.Field>
-        <Form.Label>Username</Form.Label>
+        <Form.Label>Full Name</Form.Label>
         <Form.Control>
           <Form.Input
             color="success"
-            name="username"
+            name="name"
           />
-          <Icon align="left" size="small">
-            <i className="fas fa-user" />
-          </Icon>
-          <Icon align="right" size="small">
-            <i className="fas fa-check" />
-          </Icon>
         </Form.Control>
-        <Form.Help color="success">This username is available</Form.Help>
       </Form.Field>
 
       <Form.Field>
@@ -39,7 +32,8 @@ export function SubscriberForm() {
             <i className="fas fa-exclamation-triangle" />
           </Icon>
         </Form.Control>
-        <Form.Help color="danger">An email is required</Form.Help>
+        <Form.Textarea placeholder="example@mail.com"/>
+        <Form.Help color="danger">A valid email address is required</Form.Help>
       </Form.Field>
 
       <Form.Field>
@@ -49,17 +43,18 @@ export function SubscriberForm() {
             <Form.Select
               name="subject"
             >
-              <option placeholder="Message Subject"></option>
+              <option placeholder="Message Subject">Message Subject</option>
               <option value="menu-questions">Menu Questions</option>
               <option value="complaints">Complaints or Concerns</option>
               <option value="positive-feedback">Positive Feedback</option>
               <option value="large-order">Large order</option>
               <option value="catering">Catering</option>
+              <option value="catering">Franchising Inquiry</option>
               <option value="other-comments">Other Comments</option>
             </Form.Select>
           </Form.Control>
           <Form.Control fullwidth loading>
-            <Form.Input placeholder="Message Subject Line"/>
+            <Form.Input placeholder="Subject Line (optional)"/>
           </Form.Control>
         </Form.Field>
       </Form.Field>
