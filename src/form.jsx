@@ -14,6 +14,7 @@ export function SubscriberForm() {
         <Form.Control>
           <Form.Input
             color="success"
+            colorVariant="light"
             name="name"
             placeholder="First Name      Last Name"
           />
@@ -26,6 +27,7 @@ export function SubscriberForm() {
           <Form.Input
             name="email"
             placeholder="example@mail.com"
+            colorVariant="light"
           />
           <Icon align="left" size="small">
             <i className="fas fa-envelope" />
@@ -34,7 +36,7 @@ export function SubscriberForm() {
             <i className="fas fa-exclamation-triangle" />
           </Icon>
         </Form.Control>
-        <Form.Help color="danger">A valid email address is required</Form.Help>
+        <Form.Help color="danger" colorVariant="light">A valid email address is required</Form.Help>
       </Form.Field>
 
       <Form.Field>
@@ -42,7 +44,7 @@ export function SubscriberForm() {
         <Form.Field kind="group">
           <Form.Control>
             <Form.Select
-              name="subject"
+              name="subject" colorVariant="light"
             >
               <option placeholder="Message Subject">Message Subject</option>
               <option value="menu-questions">Menu Questions</option>
@@ -55,14 +57,14 @@ export function SubscriberForm() {
             </Form.Select>
           </Form.Control>
           <Form.Control fullwidth loading>
-            <Form.Input placeholder="Subject Line (optional)"/>
+            <Form.Input placeholder="Subject Line (optional)" colorVariant="light"/>
           </Form.Control>
         </Form.Field>
       </Form.Field>
       
       <Form.Field>
         <Form.Control>
-          <Form.Textarea placeholder="Type your message here"/>
+          <Form.Textarea placeholder="Type your message here" colorVariant="light"/>
         </Form.Control>
       </Form.Field>
 
